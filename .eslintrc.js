@@ -20,5 +20,12 @@ module.exports = {
         "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
         "eqeqeq": 'off',
         "camelcase": ['error', { ignoreDestructuring: true, properties: 'never' }],
+    },
+    globals: {
+        defineProps: "readonly",
+        defineEmits: "readonly",
+        defineExpose: "readonly",
+        withDefaults: "readonly",
+        process: "readonly"
     }
 }
